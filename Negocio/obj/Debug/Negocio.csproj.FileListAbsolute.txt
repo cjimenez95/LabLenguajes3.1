@@ -1,0 +1,16 @@
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\Negocio.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\Negocio.pdb
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\Datos.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\Entidad.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\Datos.pdb
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\Datos.dll.config
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\Entidad.pdb
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\obj\Debug\Negocio.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Negocio\obj\Debug\Negocio.pdb

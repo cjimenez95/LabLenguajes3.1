@@ -1,0 +1,14 @@
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\Datos.dll.config
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\Datos.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\Datos.pdb
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\Entidad.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\EntityFramework.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\Entidad.pdb
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\EntityFramework.xml
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\obj\Release\Datos.csprojResolveAssemblyReference.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\obj\Release\Datos.csproj.CoreCompileInputs.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\obj\Release\Datos.csproj.CopyComplete
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\obj\Release\Datos.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Datos\obj\Release\Datos.pdb

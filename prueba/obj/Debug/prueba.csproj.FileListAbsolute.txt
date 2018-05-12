@@ -1,0 +1,10 @@
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\bin\Debug\prueba.exe.config
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\bin\Debug\prueba.exe
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\bin\Debug\prueba.pdb
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.csprojResolveAssemblyReference.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.Form1.resources
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.Properties.Resources.resources
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.csproj.GenerateResource.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.csproj.CoreCompileInputs.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.exe
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.pdb

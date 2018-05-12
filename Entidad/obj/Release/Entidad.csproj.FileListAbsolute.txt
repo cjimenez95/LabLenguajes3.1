@@ -1,0 +1,6 @@
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\bin\Release\Entidad.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\bin\Release\Entidad.pdb
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Release\Entidad.csprojResolveAssemblyReference.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Release\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Release\Entidad.dll
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Release\Entidad.pdb
