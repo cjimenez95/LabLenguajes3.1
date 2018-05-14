@@ -88,5 +88,10 @@ namespace prueba
             factura.Show();
             this.Hide();
         }
+
+        private void BModificarProducto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
