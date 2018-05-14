@@ -9,11 +9,11 @@
           <Key>
             <PropertyRef Name="Cedula" />
           </Key>
-          <Property Name="Cedula" Type="numeric" Precision="8" Scale="0" Nullable="false" />
-          <Property Name="Nombre" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="Apellido" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="CorreoElectronico" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="Telefono" Type="numeric" Precision="8" Scale="0" Nullable="false" />
+          <Property Name="Cedula" Nullable="false" Precision="8" Scale="0" Type="numeric" />
+          <Property Name="Nombre" Nullable="false" MaxLength="20" Type="nvarchar" />
+          <Property Name="Apellido" Nullable="false" MaxLength="20" Type="nvarchar" />
+          <Property Name="CorreoElectronico" Nullable="false" MaxLength="20" Type="nvarchar" />
+          <Property Name="Telefono" Nullable="false" Precision="8" Scale="0" Type="numeric" />
         </EntityType>
         <EntityType Name="Factura">
           <Key>
@@ -42,8 +42,8 @@
           <Property Name="Cantidad" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_Factura_Cliente">
-          <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
-          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <End Type="Self.Cliente" Multiplicity="1" Role="Cliente" />
+          <End Type="Self.Factura" Multiplicity="*" Role="Factura" />
           <ReferentialConstraint>
             <Principal Role="Cliente">
               <PropertyRef Name="Cedula" />
@@ -83,8 +83,8 @@
           <EntitySet Name="LineaFactura" EntityType="Self.LineaFactura" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Factura_Cliente" Association="Self.FK_Factura_Cliente">
-            <End Role="Cliente" EntitySet="Cliente" />
-            <End Role="Factura" EntitySet="Factura" />
+            <End EntitySet="Cliente" Role="Cliente" />
+            <End EntitySet="Factura" Role="Factura" />
           </AssociationSet>
           <AssociationSet Name="FK_LineaFactura_Factura" Association="Self.FK_LineaFactura_Factura">
             <End Role="Factura" EntitySet="Factura" />
@@ -104,11 +104,11 @@
           <Key>
             <PropertyRef Name="Cedula" />
           </Key>
-          <Property Name="Cedula" Type="Int32" Nullable="false" />
-          <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="CorreoElectronico" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Telefono" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+          <Property Name="Cedula" Nullable="false" Type="Int32" />
+          <Property Name="Nombre" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="Apellido" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CorreoElectronico" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="Telefono" Nullable="false" Type="Int32" />
           <NavigationProperty Name="Factura" Relationship="Self.FK_Factura_Cliente" FromRole="Cliente" ToRole="Factura" />
         </EntityType>
         <EntityType Name="Factura">
@@ -143,8 +143,8 @@
           <NavigationProperty Name="LineaFactura" Relationship="Self.FK_LineaFactura_Producto" FromRole="Producto" ToRole="LineaFactura" />
         </EntityType>
         <Association Name="FK_Factura_Cliente">
-          <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
-          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <End Type="Self.Cliente" Multiplicity="1" Role="Cliente" />
+          <End Type="Self.Factura" Multiplicity="*" Role="Factura" />
           <ReferentialConstraint>
             <Principal Role="Cliente">
               <PropertyRef Name="Cedula" />
@@ -184,8 +184,8 @@
           <EntitySet Name="LineaFactura" EntityType="Self.LineaFactura" />
           <EntitySet Name="Producto" EntityType="Self.Producto" />
           <AssociationSet Name="FK_Factura_Cliente" Association="Self.FK_Factura_Cliente">
-            <End Role="Cliente" EntitySet="Cliente" />
-            <End Role="Factura" EntitySet="Factura" />
+            <End EntitySet="Cliente" Role="Cliente" />
+            <End EntitySet="Factura" Role="Factura" />
           </AssociationSet>
           <AssociationSet Name="FK_LineaFactura_Factura" Association="Self.FK_LineaFactura_Factura">
             <End Role="Factura" EntitySet="Factura" />

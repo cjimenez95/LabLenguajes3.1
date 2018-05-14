@@ -38,10 +38,10 @@
             this.LCedula = new System.Windows.Forms.Label();
             this.LApellido = new System.Windows.Forms.Label();
             this.LNombre = new System.Windows.Forms.Label();
-            this.BInsertar = new System.Windows.Forms.Button();
             this.btAtras = new System.Windows.Forms.Button();
-            this.btBuscar = new System.Windows.Forms.Button();
             this.lbMensaje = new System.Windows.Forms.Label();
+            this.btGuardar = new System.Windows.Forms.Button();
+            this.btBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MTBCedula
@@ -55,7 +55,7 @@
             // MTBTelefono
             // 
             this.MTBTelefono.Location = new System.Drawing.Point(120, 172);
-            this.MTBTelefono.Mask = "(999)000-00000";
+            this.MTBTelefono.Mask = "00000000";
             this.MTBTelefono.Name = "MTBTelefono";
             this.MTBTelefono.Size = new System.Drawing.Size(365, 20);
             this.MTBTelefono.TabIndex = 24;
@@ -126,16 +126,6 @@
             this.LNombre.TabIndex = 16;
             this.LNombre.Text = "Nombre";
             // 
-            // BInsertar
-            // 
-            this.BInsertar.Location = new System.Drawing.Point(410, 198);
-            this.BInsertar.Name = "BInsertar";
-            this.BInsertar.Size = new System.Drawing.Size(75, 23);
-            this.BInsertar.TabIndex = 15;
-            this.BInsertar.Text = "Guardar";
-            this.BInsertar.UseVisualStyleBackColor = true;
-            this.BInsertar.Click += new System.EventHandler(this.BInsertar_Click);
-            // 
             // btAtras
             // 
             this.btAtras.Location = new System.Drawing.Point(568, 198);
@@ -146,16 +136,6 @@
             this.btAtras.UseVisualStyleBackColor = true;
             this.btAtras.Click += new System.EventHandler(this.btAtras_Click);
             // 
-            // btBuscar
-            // 
-            this.btBuscar.Location = new System.Drawing.Point(490, 29);
-            this.btBuscar.Name = "btBuscar";
-            this.btBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btBuscar.TabIndex = 27;
-            this.btBuscar.Text = "Buscar";
-            this.btBuscar.UseVisualStyleBackColor = true;
-            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
-            // 
             // lbMensaje
             // 
             this.lbMensaje.AutoSize = true;
@@ -163,14 +143,36 @@
             this.lbMensaje.Name = "lbMensaje";
             this.lbMensaje.Size = new System.Drawing.Size(0, 13);
             this.lbMensaje.TabIndex = 28;
+            this.lbMensaje.Click += new System.EventHandler(this.BInsertar_Click);
+            // 
+            // btGuardar
+            // 
+            this.btGuardar.Location = new System.Drawing.Point(410, 198);
+            this.btGuardar.Name = "btGuardar";
+            this.btGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btGuardar.TabIndex = 29;
+            this.btGuardar.Text = "Guardar";
+            this.btGuardar.UseVisualStyleBackColor = true;
+            this.btGuardar.Click += new System.EventHandler(this.btBusca_Click);
+            // 
+            // btBuscar
+            // 
+            this.btBuscar.Location = new System.Drawing.Point(501, 28);
+            this.btBuscar.Name = "btBuscar";
+            this.btBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btBuscar.TabIndex = 30;
+            this.btBuscar.Text = "Buscar";
+            this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // ModificarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 450);
-            this.Controls.Add(this.lbMensaje);
             this.Controls.Add(this.btBuscar);
+            this.Controls.Add(this.btGuardar);
+            this.Controls.Add(this.lbMensaje);
             this.Controls.Add(this.btAtras);
             this.Controls.Add(this.MTBCedula);
             this.Controls.Add(this.MTBTelefono);
@@ -182,7 +184,6 @@
             this.Controls.Add(this.LCedula);
             this.Controls.Add(this.LApellido);
             this.Controls.Add(this.LNombre);
-            this.Controls.Add(this.BInsertar);
             this.Name = "ModificarCliente";
             this.Text = "MoficarCliente";
             this.ResumeLayout(false);
@@ -202,9 +203,9 @@
         private System.Windows.Forms.Label LCedula;
         private System.Windows.Forms.Label LApellido;
         private System.Windows.Forms.Label LNombre;
-        private System.Windows.Forms.Button BInsertar;
         private System.Windows.Forms.Button btAtras;
-        private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.Label lbMensaje;
+        private System.Windows.Forms.Button btGuardar;
+        private System.Windows.Forms.Button btBuscar;
     }
 }

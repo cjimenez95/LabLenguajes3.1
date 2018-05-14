@@ -35,7 +35,6 @@ namespace prueba
             listaClientes.Show();
             this.Hide();
 
-            String strLista = "";
             List<Cliente> list = clienteNegocio.GetClientes();
             foreach (var item in list)
             {
@@ -80,6 +79,13 @@ namespace prueba
         {
             ModificarCliente modificarCliente = new ModificarCliente();
             modificarCliente.Show();
+            this.Hide();
+        }
+
+        private void btFactura_Click(object sender, EventArgs e)
+        {
+            CrearFactura factura = new CrearFactura();
+            factura.Show();
             this.Hide();
         }
     }

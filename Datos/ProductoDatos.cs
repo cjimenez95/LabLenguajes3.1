@@ -35,5 +35,16 @@ namespace Datos
             dB.Producto.Remove(buscarProducto(codigo));
             dB.SaveChanges();
         }
+
+        public void modificarProducto(Producto producto, Producto nuevoProducto) {
+            producto.Codigo = nuevoProducto.Codigo;
+            producto.Producto1 = nuevoProducto.Producto1;
+            producto.Precio = nuevoProducto.Precio;
+            producto.Cantidad = producto.Cantidad;
+        }
+
+        public Producto GetProducto(String codigo) {
+            return dB.Producto.Find(codigo);
+        }
     }
 }

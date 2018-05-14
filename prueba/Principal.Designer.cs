@@ -34,6 +34,7 @@
             this.btIngresarProducto = new System.Windows.Forms.Button();
             this.btListaProductos = new System.Windows.Forms.Button();
             this.btModificarCliente = new System.Windows.Forms.Button();
+            this.btFactura = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btAddClientes
@@ -68,7 +69,7 @@
             // 
             // btIngresarProducto
             // 
-            this.btIngresarProducto.Location = new System.Drawing.Point(231, 26);
+            this.btIngresarProducto.Location = new System.Drawing.Point(185, 26);
             this.btIngresarProducto.Name = "btIngresarProducto";
             this.btIngresarProducto.Size = new System.Drawing.Size(105, 23);
             this.btIngresarProducto.TabIndex = 3;
@@ -78,7 +79,7 @@
             // 
             // btListaProductos
             // 
-            this.btListaProductos.Location = new System.Drawing.Point(231, 55);
+            this.btListaProductos.Location = new System.Drawing.Point(185, 56);
             this.btListaProductos.Name = "btListaProductos";
             this.btListaProductos.Size = new System.Drawing.Size(105, 23);
             this.btListaProductos.TabIndex = 4;
@@ -96,11 +97,22 @@
             this.btModificarCliente.UseVisualStyleBackColor = true;
             this.btModificarCliente.Click += new System.EventHandler(this.btModificarCliente_Click);
             // 
+            // btFactura
+            // 
+            this.btFactura.Location = new System.Drawing.Point(338, 25);
+            this.btFactura.Name = "btFactura";
+            this.btFactura.Size = new System.Drawing.Size(92, 23);
+            this.btFactura.TabIndex = 6;
+            this.btFactura.Text = "Crear factura";
+            this.btFactura.UseVisualStyleBackColor = true;
+            this.btFactura.Click += new System.EventHandler(this.btFactura_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 305);
+            this.ClientSize = new System.Drawing.Size(513, 208);
+            this.Controls.Add(this.btFactura);
             this.Controls.Add(this.btModificarCliente);
             this.Controls.Add(this.btListaProductos);
             this.Controls.Add(this.btIngresarProducto);
@@ -122,5 +134,6 @@
         private System.Windows.Forms.Button btIngresarProducto;
         private System.Windows.Forms.Button btListaProductos;
         private System.Windows.Forms.Button btModificarCliente;
+        private System.Windows.Forms.Button btFactura;
     }
 }

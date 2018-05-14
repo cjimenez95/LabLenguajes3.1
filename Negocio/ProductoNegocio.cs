@@ -9,11 +9,11 @@ using Entidad;
 namespace Negocio
 {
 
- 
-   public  class ProductoNegocio
+
+    public class ProductoNegocio
     {
         ProductoDatos productoDatos = new ProductoDatos();
-       
+
 
         public List<Producto> GetProductos() {
             return productoDatos.GetProductos().ToList();
@@ -39,14 +39,33 @@ namespace Negocio
 
             Producto producto = new Producto()
             {
-            Codigo = codigo,
-            Producto1 = descripcion,
-            Precio= decimalPrecio,
-            Cantidad=intCantidad
+                Codigo = codigo,
+                Producto1 = descripcion,
+                Precio = decimalPrecio,
+                Cantidad = intCantidad
             };
             productoDatos.agregarProducto(producto);
         }
 
+        public void modificarProducto(Producto producto, String codigo, String descripcion, String precioVenta, String cantidadInventario)
+        {
+            decimal decimalPrecio;
+            decimal.TryParse(precioVenta, out decimalPrecio);
+            int intCantidad;
+            int.TryParse(cantidadInventario, out intCantidad);
+            Producto nuevoProducto = new Producto()
+            {
+                Codigo = codigo,
+                Producto1 = descripcion,
+                Precio = decimalPrecio,
+                Cantidad = intCantidad
+            };
+            productoDatos.modificarProducto(producto, nuevoProducto);
+        }
 
+        public Producto GetProducto(String codigo) {
+            return productoDatos.GetProducto(codigo);
+        }
     }
+    
 }

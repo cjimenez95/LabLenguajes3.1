@@ -19,8 +19,8 @@ namespace Negocio
 
         public Cliente agregarCliente(String id, String nombre, String apellido, string correo, String telefono) {
             int intId;
-            int intTelefono;
             int.TryParse(id, out intId);
+            int intTelefono;
             int.TryParse(telefono, out intTelefono);
 
             Cliente cliente = new Cliente()
@@ -53,7 +53,25 @@ namespace Negocio
             int intCedula;
             int.TryParse(cedulaCliente, out intCedula);
             clienteDatos.eliminarCliente(intCedula);
+        }
 
+        public void modificarCliente(Cliente cliente, String id, String nombre, String apellido, string correo, String telefono) {
+            int intId;
+            int.TryParse(id, out intId);
+            int intTelefono;
+            int.TryParse(telefono,out intTelefono);
+          
+
+            Cliente nuevoCliente = new Cliente()
+            {
+                Nombre = nombre.Trim(),
+                Apellido = apellido,
+                Telefono = intTelefono,
+                CorreoElectronico = correo,
+                Cedula = intId
+            };
+
+            clienteDatos.modificarCliente(cliente,nuevoCliente);
         }
 
 

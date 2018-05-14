@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="b76d831231514ba7981f32b4c2bc99f6" Name="Diagram1">
-        <EntityTypeShape EntityType="DB_LabLenguejesModel.Cliente" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_LabLenguejesModel.Cliente" PointX="0.75" PointY="1" Width="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="DB_LabLenguejesModel.Factura" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DB_LabLenguejesModel.LineaFactura" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DB_LabLenguejesModel.Producto" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <AssociationConnector Association="DB_LabLenguejesModel.FK_Factura_Cliente" ManuallyRouted="false" />
+        <AssociationConnector ManuallyRouted="false" Association="DB_LabLenguejesModel.FK_Factura_Cliente" />
         <AssociationConnector Association="DB_LabLenguejesModel.FK_LineaFactura_Factura" ManuallyRouted="false" />
         <AssociationConnector Association="DB_LabLenguejesModel.FK_LineaFactura_Producto" ManuallyRouted="false" />
       </Diagram>

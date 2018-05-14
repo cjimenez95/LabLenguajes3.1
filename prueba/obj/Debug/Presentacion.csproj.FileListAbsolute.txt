@@ -16,7 +16,10 @@ C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\Presenta
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.AgregarCliente.resources
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.AgregarProducto.resources
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.BuscarCliente.resources
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.CrearFactura.resources
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.ListaClientes.resources
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.ListaProductos.resources
+C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.ModificarCliente.resources
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\prueba.Principal.resources
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.Properties.Resources.resources
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\Presentacion.csproj.GenerateResource.cache
@@ -24,5 +27,3 @@ C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\Presenta
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\Presentacion.exe
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\Presentacion.pdb
-C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.ListaProductos.resources
-C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\prueba\obj\Debug\presentacion.ModificarCliente.resources

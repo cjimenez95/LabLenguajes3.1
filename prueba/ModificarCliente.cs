@@ -28,28 +28,36 @@ namespace presentacion
             this.Dispose();
         }
 
-        private void btBuscar_Click(object sender, EventArgs e)
-        {
-            Cliente cliente= clienteNegocio.GetCliente(MTBCedula.Text);
-            if (cliente == null)
-            {
-                lbMensaje.Text = "No se encontro el cliente";
-            }
-            else {
-                lbMensaje.Text = "";
-                TBNombre.Text = cliente.Nombre;
-                TBApellido.Text = cliente.Apellido;
-                TBEmail.Text = cliente.CorreoElectronico;
-                MTBTelefono.Text = ""+cliente.Telefono;
-            }
-            
-
-
-        }
 
         private void BInsertar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btBusca_Click(object sender, EventArgs e)
+        {
+            clienteNegocio.modificarCliente(clienteNegocio.GetCliente(MTBCedula.Text), MTBCedula.Text, TBNombre.Text, TBApellido.Text, TBEmail.Text, MTBTelefono.Text);
+            lbMensaje.Text = "Cliente modificado";
+        }
+
+        private void btBuscar_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = clienteNegocio.GetCliente(MTBCedula.Text);
+            if (cliente == null)
+            {
+                lbMensaje.Text = "No se encontro el cliente";
+            }
+            else
+            {
+                lbMensaje.Text = "";
+                TBNombre.Text = cliente.Nombre;
+                TBApellido.Text = cliente.Apellido;
+                TBEmail.Text = cliente.CorreoElectronico;
+                MTBTelefono.Text = "" + cliente.Telefono;
+            }
+
+
+          
         }
     }
 }

@@ -40,11 +40,12 @@
             this.MTBTelefono = new System.Windows.Forms.MaskedTextBox();
             this.MTBCedula = new System.Windows.Forms.MaskedTextBox();
             this.btAtras = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BInsertar
             // 
-            this.BInsertar.Location = new System.Drawing.Point(118, 186);
+            this.BInsertar.Location = new System.Drawing.Point(270, 217);
             this.BInsertar.Name = "BInsertar";
             this.BInsertar.Size = new System.Drawing.Size(75, 23);
             this.BInsertar.TabIndex = 2;
@@ -55,7 +56,7 @@
             // LNombre
             // 
             this.LNombre.AutoSize = true;
-            this.LNombre.Location = new System.Drawing.Point(29, 13);
+            this.LNombre.Location = new System.Drawing.Point(31, 44);
             this.LNombre.Name = "LNombre";
             this.LNombre.Size = new System.Drawing.Size(44, 13);
             this.LNombre.TabIndex = 3;
@@ -65,7 +66,7 @@
             // LApellido
             // 
             this.LApellido.AutoSize = true;
-            this.LApellido.Location = new System.Drawing.Point(32, 56);
+            this.LApellido.Location = new System.Drawing.Point(34, 87);
             this.LApellido.Name = "LApellido";
             this.LApellido.Size = new System.Drawing.Size(44, 13);
             this.LApellido.TabIndex = 4;
@@ -74,7 +75,7 @@
             // LCedula
             // 
             this.LCedula.AutoSize = true;
-            this.LCedula.Location = new System.Drawing.Point(32, 92);
+            this.LCedula.Location = new System.Drawing.Point(34, 123);
             this.LCedula.Name = "LCedula";
             this.LCedula.Size = new System.Drawing.Size(40, 13);
             this.LCedula.TabIndex = 5;
@@ -83,7 +84,7 @@
             // LEmail
             // 
             this.LEmail.AutoSize = true;
-            this.LEmail.Location = new System.Drawing.Point(32, 128);
+            this.LEmail.Location = new System.Drawing.Point(34, 159);
             this.LEmail.Name = "LEmail";
             this.LEmail.Size = new System.Drawing.Size(32, 13);
             this.LEmail.TabIndex = 6;
@@ -92,7 +93,7 @@
             // LTelefono
             // 
             this.LTelefono.AutoSize = true;
-            this.LTelefono.Location = new System.Drawing.Point(32, 167);
+            this.LTelefono.Location = new System.Drawing.Point(34, 198);
             this.LTelefono.Name = "LTelefono";
             this.LTelefono.Size = new System.Drawing.Size(49, 13);
             this.LTelefono.TabIndex = 7;
@@ -100,44 +101,44 @@
             // 
             // TBNombre
             // 
-            this.TBNombre.Location = new System.Drawing.Point(118, 13);
+            this.TBNombre.Location = new System.Drawing.Point(120, 44);
             this.TBNombre.Name = "TBNombre";
-            this.TBNombre.Size = new System.Drawing.Size(365, 20);
+            this.TBNombre.Size = new System.Drawing.Size(225, 20);
             this.TBNombre.TabIndex = 8;
             // 
             // TBApellido
             // 
-            this.TBApellido.Location = new System.Drawing.Point(118, 53);
+            this.TBApellido.Location = new System.Drawing.Point(120, 84);
             this.TBApellido.Name = "TBApellido";
-            this.TBApellido.Size = new System.Drawing.Size(365, 20);
+            this.TBApellido.Size = new System.Drawing.Size(225, 20);
             this.TBApellido.TabIndex = 9;
             // 
             // TBEmail
             // 
-            this.TBEmail.Location = new System.Drawing.Point(118, 120);
+            this.TBEmail.Location = new System.Drawing.Point(120, 151);
             this.TBEmail.Name = "TBEmail";
-            this.TBEmail.Size = new System.Drawing.Size(365, 20);
+            this.TBEmail.Size = new System.Drawing.Size(225, 20);
             this.TBEmail.TabIndex = 11;
             // 
             // MTBTelefono
             // 
-            this.MTBTelefono.Location = new System.Drawing.Point(118, 160);
+            this.MTBTelefono.Location = new System.Drawing.Point(120, 191);
             this.MTBTelefono.Mask = "(999)000-00000";
             this.MTBTelefono.Name = "MTBTelefono";
-            this.MTBTelefono.Size = new System.Drawing.Size(365, 20);
+            this.MTBTelefono.Size = new System.Drawing.Size(225, 20);
             this.MTBTelefono.TabIndex = 13;
             // 
             // MTBCedula
             // 
-            this.MTBCedula.Location = new System.Drawing.Point(118, 85);
+            this.MTBCedula.Location = new System.Drawing.Point(120, 116);
             this.MTBCedula.Mask = "000000000";
             this.MTBCedula.Name = "MTBCedula";
-            this.MTBCedula.Size = new System.Drawing.Size(365, 20);
+            this.MTBCedula.Size = new System.Drawing.Size(225, 20);
             this.MTBCedula.TabIndex = 14;
             // 
             // btAtras
             // 
-            this.btAtras.Location = new System.Drawing.Point(512, 186);
+            this.btAtras.Location = new System.Drawing.Point(12, 12);
             this.btAtras.Name = "btAtras";
             this.btAtras.Size = new System.Drawing.Size(39, 23);
             this.btAtras.TabIndex = 15;
@@ -145,11 +146,21 @@
             this.btAtras.UseVisualStyleBackColor = true;
             this.btAtras.Click += new System.EventHandler(this.btAtras_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(120, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Ingresar cliente";
+            // 
             // AgregarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 219);
+            this.ClientSize = new System.Drawing.Size(563, 252);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btAtras);
             this.Controls.Add(this.MTBCedula);
             this.Controls.Add(this.MTBTelefono);
@@ -183,6 +194,7 @@
         private System.Windows.Forms.MaskedTextBox MTBTelefono;
         private System.Windows.Forms.MaskedTextBox MTBCedula;
         private System.Windows.Forms.Button btAtras;
+        private System.Windows.Forms.Label label1;
     }
 }
 

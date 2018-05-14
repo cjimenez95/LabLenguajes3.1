@@ -21,7 +21,6 @@ namespace Datos
 
         public Cliente buscarCliente(int cedula)
         {
-            db.SaveChanges();
             return db.Cliente.Find(cedula);
         }
 
@@ -29,7 +28,14 @@ namespace Datos
             db.Cliente.Remove(buscarCliente(cedula));
             db.SaveChanges();
         }
-   
+
+        public void modificarCliente(Cliente cliente, Cliente nuevoCliente)
+        {
+            cliente = nuevoCliente;
+            db.Cliente.Find(cliente.Cedula).Telefono = nuevoCliente.Telefono;
+            db.SaveChanges();
+        }
+        
         
     }
 }
