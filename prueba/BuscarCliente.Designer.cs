@@ -80,6 +80,7 @@
             this.Controls.Add(this.btBuscar);
             this.Name = "BuscarCliente";
             this.Text = "BuscarCliente";
+            this.Load += new System.EventHandler(this.BuscarCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

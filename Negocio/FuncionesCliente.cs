@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 
 namespace Negocio
 {
-    class FuncionesCliente
+    public class FuncionesCliente
     {
 
 

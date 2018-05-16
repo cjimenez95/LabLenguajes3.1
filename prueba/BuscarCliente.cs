@@ -30,5 +30,10 @@ namespace presentacion
             lbCliente.Text = "Cliente " + clienteNegocio.GetCliente(txtCedula.Text).Nombre+" eliminado";
            clienteNegocio.eliminarCliente(txtCedula.Text);
         }
+
+        private void BuscarCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

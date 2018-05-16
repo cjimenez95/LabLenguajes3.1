@@ -52,7 +52,6 @@
             this.lbTotal = new System.Windows.Forms.Label();
             this.btAtras = new System.Windows.Forms.Button();
             this.btGuardarFactura = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -250,9 +249,8 @@
             this.lbTotal.AutoSize = true;
             this.lbTotal.Location = new System.Drawing.Point(393, 176);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(25, 13);
+            this.lbTotal.Size = new System.Drawing.Size(0, 13);
             this.lbTotal.TabIndex = 15;
-            this.lbTotal.Text = "777";
             // 
             // btAtras
             // 
@@ -262,6 +260,7 @@
             this.btAtras.TabIndex = 16;
             this.btAtras.Text = "Atras";
             this.btAtras.UseVisualStyleBackColor = true;
+            this.btAtras.Click += new System.EventHandler(this.btAtras_Click);
             // 
             // btGuardarFactura
             // 
@@ -272,21 +271,11 @@
             this.btGuardarFactura.Text = "Guardar";
             this.btGuardarFactura.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(396, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // CrearFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 303);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btGuardarFactura);
             this.Controls.Add(this.btAtras);
             this.Controls.Add(this.lbTotal);
@@ -336,6 +325,5 @@
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Button btAtras;
         private System.Windows.Forms.Button btGuardarFactura;
-        private System.Windows.Forms.Button button1;
     }
 }
