@@ -93,5 +93,12 @@ namespace prueba
         {
 
         }
+
+        private void BBuscarProducto_Click(object sender, EventArgs e)
+        {
+            BuscarProductos buscarProductos = new BuscarProductos();
+            buscarProductos.Show();
+            this.Hide();
+        }
     }
 }

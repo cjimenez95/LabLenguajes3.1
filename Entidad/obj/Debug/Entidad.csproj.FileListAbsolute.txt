@@ -8,4 +8,3 @@ C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Debug\Entidad
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Debug\Entidad.csproj.CopyComplete
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Debug\Entidad.dll
 C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Debug\Entidad.pdb
-C:\Users\César Jimenez A\source\repos\LabLenguajes3.1\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache

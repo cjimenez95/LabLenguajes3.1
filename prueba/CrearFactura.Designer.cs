@@ -153,6 +153,7 @@
             this.btModificar.TabIndex = 9;
             this.btModificar.Text = "Modificar";
             this.btModificar.UseVisualStyleBackColor = true;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // txtCodModificar
             // 
@@ -270,6 +271,7 @@
             this.btGuardarFactura.TabIndex = 17;
             this.btGuardarFactura.Text = "Guardar";
             this.btGuardarFactura.UseVisualStyleBackColor = true;
+            this.btGuardarFactura.Click += new System.EventHandler(this.btGuardarFactura_Click);
             // 
             // CrearFactura
             // 

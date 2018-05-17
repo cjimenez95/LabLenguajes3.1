@@ -91,6 +91,12 @@
     <Compile Include="BuscarEliminarProducto.Designer.cs">
       <DependentUpon>BuscarEliminarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProductos.Designer.cs">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrearFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarEliminarProducto.resx">
       <DependentUpon>BuscarEliminarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProductos.resx">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearFactura.resx">
       <DependentUpon>CrearFactura.cs</DependentUpon>

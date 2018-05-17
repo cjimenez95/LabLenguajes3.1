@@ -131,7 +131,7 @@
             // MTBCedula
             // 
             this.MTBCedula.Location = new System.Drawing.Point(120, 116);
-            this.MTBCedula.Mask = "000000000";
+            this.MTBCedula.Mask = "0000000";
             this.MTBCedula.Name = "MTBCedula";
             this.MTBCedula.Size = new System.Drawing.Size(225, 20);
             this.MTBCedula.TabIndex = 14;
@@ -159,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 252);
+            this.ClientSize = new System.Drawing.Size(405, 252);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btAtras);
             this.Controls.Add(this.MTBCedula);

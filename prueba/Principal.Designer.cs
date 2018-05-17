@@ -117,6 +117,7 @@
             this.BBuscarProducto.TabIndex = 7;
             this.BBuscarProducto.Text = "Buscar Productos";
             this.BBuscarProducto.UseVisualStyleBackColor = true;
+            this.BBuscarProducto.Click += new System.EventHandler(this.BBuscarProducto_Click);
             // 
             // BModificarProducto
             // 

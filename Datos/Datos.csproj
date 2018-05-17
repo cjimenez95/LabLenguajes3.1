@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteDatos.cs" />
+    <Compile Include="FacturaDatos.cs" />
+    <Compile Include="LineaFacturaDatos.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

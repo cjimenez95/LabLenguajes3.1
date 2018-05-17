@@ -19,8 +19,14 @@ namespace presentacion
 
         private void btGuardar_Click(object sender, EventArgs e)
         {
+            try { 
         ProductoNegocio productoNegocio = new ProductoNegocio();
             productoNegocio.addProducto(txtCodigo.Text,txtDescripcion.Text, txtPrecioVenta.Text, txtCantidad.Text);
+            }
+            catch (Exception em)
+            {
+                MessageBox.Show("" + em.Message);
+            }
         }
 
         private void btAtras_Click(object sender, EventArgs e)

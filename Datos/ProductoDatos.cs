@@ -24,13 +24,13 @@ namespace Datos
             dB.SaveChanges();
         }
 
-        public Producto buscarProducto(int codigo)
+        public Producto buscarProducto(string codigo)
         {
-            dB.SaveChanges();
+            
             return dB.Producto.Find(codigo);
         }
 
-        public void eliminarProducto(int codigo)
+        public void eliminarProducto(string codigo)
         {
             dB.Producto.Remove(buscarProducto(codigo));
             dB.SaveChanges();

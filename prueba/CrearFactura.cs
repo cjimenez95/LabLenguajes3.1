@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
 using Entidad;
@@ -24,7 +18,7 @@ namespace presentacion
         Cliente cliente = new Cliente();
         ProductoNegocio productoNegocio = new ProductoNegocio();
         List<LineaFactura> listaProductos = new List<LineaFactura>();
-        decimal total = 0;
+        
 
         private void Factura_Load(object sender, EventArgs e)
         {
@@ -60,6 +54,7 @@ namespace presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Producto producto = new Producto();
             byte byteCantidad;
             producto=productoNegocio.GetProducto(txtCodAgregar.Text);
@@ -75,14 +70,16 @@ namespace presentacion
             };
 
             listaProductos.Add(lineaFactura);
-            llenarDGV();
+            agregarLineaDGV();
             String strTotal = calcularTotal()+"";
             lbTotal.Text = strTotal.Substring(0,strTotal.Length-2);
-            
+
+            txtCantidadAgregar.Text="Cantidad";
+            txtCodAgregar.Text= "CodigoProdcuto";
             
         }
 
-        private void llenarDGV() {
+        private void agregarLineaDGV() {
             int i = listaProductos.Count - 1;
                 Producto producto = productoNegocio.GetProducto(listaProductos[i].CodigoProducto);
                 dgvLineasFactura.Rows.Add(listaProductos[i].CodigoProducto, listaProductos[i].Cantidad, producto.Producto1, producto.Precio, (producto.Precio * listaProductos[i].Cantidad));
@@ -90,7 +87,7 @@ namespace presentacion
 
         private decimal calcularTotal()
         {
-           
+            decimal total = 0;
             foreach (var item in listaProductos)
             {
                 Producto producto= productoNegocio.GetProducto(item.CodigoProducto);
@@ -106,6 +103,36 @@ namespace presentacion
             Principal principal = new Principal();
             principal.Show();
             this.Hide();
+        }
+
+        private void btGuardarFactura_Click(object sender, EventArgs e)
+        {
+            FacturaNegocio factura = new FacturaNegocio();
+            factura.crearFacura(cliente,listaProductos);
+
+            MessageBox.Show(text: "Factura creada");
+            lbCliente.Text="";
+            txtCedula.Clear();
+            lbTotal.Text = "";
+            dgvLineasFactura.Rows.Clear();
+        }
+
+
+        private void modificarDGV() {
+            dgvLineasFactura.Rows.Clear();
+            foreach (var item in listaProductos)
+            {
+                Producto producto = productoNegocio.GetProducto(item.CodigoProducto);
+                dgvLineasFactura.Rows.Add(item.CodigoProducto,item.Cantidad,producto.Producto1,producto.Precio,(item.Cantidad*producto.Precio));
+            }
+        }
+        private void btModificar_Click(object sender, EventArgs e)
+        {
+            FacturaNegocio factura = new FacturaNegocio();
+            listaProductos= factura.modificarLineas(listaProductos,txtCodModificar.Text,txtCantidadModificar.Text);
+            modificarDGV();
+            String strTotal = calcularTotal() + "";
+            lbTotal.Text = strTotal.Substring(0, strTotal.Length - 2);
         }
     }
 }

@@ -10,11 +10,11 @@ namespace Negocio
     public class ProductoFunciones
     {
         ProductoDatos productoDatos = new ProductoDatos();
-        public Producto GetCliente(String ID)
-        {
-            int intID;
-            int.TryParse(ID, out intID);
-            return productoDatos.buscarProducto(intID);
-        }
+        //public Producto GetCliente(String ID)
+        //{
+        //    int intID;
+        //    int.TryParse(ID, out intID);
+        //    return productoDatos.buscarProducto(intID);
+        //}
     }
 }

@@ -9,9 +9,7 @@
 
 namespace Entidad
 {
-    using System;
-    using System.Collections.Generic;
-    
+
     public partial class LineaFactura
     {
         public int NumFacturaFk { get; set; }
